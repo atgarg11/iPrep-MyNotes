@@ -1,0 +1,287 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<meta content="text/html; charset=ISO-8859-1" http-equiv="content-type"><title>STL</title></head><body>
+<table style="text-align: left; width: 100%;" border="1" cellpadding="2" cellspacing="2">
+  <tbody>
+    
+    <tr>
+      <td style="vertical-align: top;"><br>
+      </td>
+      <td style="vertical-align: top; width: 501px;"><br>
+      </td>
+      <td style="vertical-align: top; width: 437px;">Quick Reference<br>
+      </td>
+      <td style="vertical-align: top; width: 210px;">Reference<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;"><br>
+      </td>
+      <td style="vertical-align: top; width: 501px;"><a href="https://www.geeksforgeeks.org/the-c-standard-template-library-stl/">geeks for geeks</a><br>
+      </td>
+      <td style="vertical-align: top; width: 437px;"><br>
+      </td>
+      <td style="vertical-align: top; width: 210px;"><a href="http://www.martinbroadhurst.com/stl/table_of_contents.html">sgi-STL</a><br>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">Terms</td>
+      <td style="vertical-align: top; width: 501px;">Container Adaptor: a container that is built on another base container like prioroty queue</td>
+      <td style="vertical-align: top; width: 437px;"><br>
+      </td>
+      <td style="vertical-align: top; width: 210px;"><br>
+      </td>
+    </tr>
+<tr>
+      <td style="vertical-align: top;"><span style="font-weight: bold;">Containers</span><br>
+      </td>
+      <td style="vertical-align: top; width: 501px;"><br>
+      </td>
+      <td style="vertical-align: top; width: 437px;"><br>
+      </td>
+      <td style="vertical-align: top; width: 210px;"><br>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;"><br>
+      </td>
+      <td style="vertical-align: top; width: 501px;">string<br>
+      </td>
+      <td style="vertical-align: top; width: 437px;">length(), at()</td>
+      <td style="vertical-align: top; width: 210px;"><br>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">stack<br>
+      </td>
+      <td style="vertical-align: top; width: 501px;">stack&lt;int&gt; <br>
+      </td>
+      <td style="vertical-align: top; width: 437px;">push(), pop(), top(), empty()<br>
+      </td>
+      <td style="vertical-align: top; width: 210px;"><br>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">queue<br>
+      </td>
+      <td style="vertical-align: top; width: 501px;">queue&lt;listNode*&gt;<br>
+      </td>
+      <td style="vertical-align: top; width: 437px;">push(), pop(), front(), empty()<br>
+      </td>
+      <td style="vertical-align: top; width: 210px;"><br>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">deque<br>
+      </td>
+      <td style="vertical-align: top;">Same as vector. contant time<br>
+      <ul>
+        <li>Access</li>
+        <li>Insertion at end.</li>
+      </ul>
+      </td>
+      <td style="vertical-align: top;">Difference&nbsp; <br>
+
+      <ul>
+<li>contant time insertion at the front of queue.</li>
+      </ul>
+
+      </td>
+      <td style="vertical-align: top;"><br>
+      </td>
+    </tr>
+<tr>
+      <td style="vertical-align: top;"><a href="http://www.cplusplus.com/reference/vector/vector/resize/">vector</a><br>
+      </td>
+      <td style="vertical-align: top; width: 501px;">
+      <ul>
+        <li>vector&lt;int&gt; v</li>
+        <li>vector &lt;vector&lt;edges&gt;&gt; graph</li>
+      </ul>
+</td>
+      <td style="vertical-align: top; width: 437px;">push_back(), size(), v[ ], clear()<br>
+resize(), reserve()<br>
+      </td>
+      <td style="vertical-align: top; width: 210px;"><br>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">iterator<br>
+      </td>
+      <td style="vertical-align: top; width: 501px;">vector&lt;int&gt;::iterator it<br>
+auto itr = it.begin()<br>
+      </td>
+      <td style="vertical-align: top; width: 437px;">it = v.begin() v.end()<br>
+<br>
+      </td>
+      <td style="vertical-align: top; width: 210px;"><br>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">reverse_iterator<br>
+      </td>
+      <td style="vertical-align: top; width: 501px;">vector&gt;int&gt;::reverse_iterator rit<br>
+      </td>
+      <td style="vertical-align: top; width: 437px;">rit = v.rbegin()<br>
+      </td>
+      <td style="vertical-align: top; width: 210px;"><br>
+      </td>
+    </tr><tr>
+      <td style="vertical-align: top;">Priority_queue<br>
+      </td>
+      <td style="vertical-align: top; width: 501px;">priority_queue&lt;int&gt;<br>
+priority_queue&lt;edges, vector&lt;edges&gt;, edgeCompare&gt; pq<br>
+      </td>
+      <td style="vertical-align: top; width: 437px;">Dijkstra's Algo<br>
+By Default sorts in ascending order. <br>
+To sort in descending order use greater&lt;int&gt;<br>
+      </td>
+      <td style="vertical-align: top; width: 210px;"><a href="https://gigi.nullneuron.net/gigilabs/how-to-use-the-c-stl-priority-queue/">STL PQs with objects</a><br>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">maps [ Hash tables]<br>
+      </td>
+      <td style="vertical-align: top; width: 501px;">
+      <ul>
+        <li>map&lt;int, int&gt; hash1</li>
+        <li>
+map&lt;string, int&gt; hash2</li>
+        <li>
+Declaring an iterator <br>
+        </li>
+        <ul>
+          <li>auto itr = hash.begin()</li>
+        </ul>
+        <li>
+Map is ordered hash. </li>
+        <li>
+erase()</li>
+        <ul>
+          <li>From key : 
+hash.erase(key)</li>
+        </ul>
+        <ul>
+          <li>itr: 
+hash.erase(itr), itr-&gt;first, itr-&gt;second</li>
+        </ul>
+        <li>Iterating over hash</li>
+        <ul>
+          <li>for (auto h: hash) {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if (h.second == 1) {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; res.push_back(h.first);<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }<br>
+          </li>
+        </ul>
+      </ul>
+
+      <ul>
+        
+        
+      </ul>
+
+      </td>
+      <td style="vertical-align: top; width: 437px;">Snake and Ladder <br>
+hash1.insert(pair&lt;int, int&gt; (200, 10))<br>
+hash2["hi"]=2<br><br>
+hash.empty()<br>
+count(key): count the number of elements with key<br>
+find(key): find element with key<br>
+      </td>
+      <td style="vertical-align: top; width: 210px;"><a href="https://www.studytonight.com/cpp/stl/stl-container-map">Study Tonight</a><br>
+      </td>
+    </tr><tr>
+      <td style="vertical-align: top;">set / multiset<br>
+      </td>
+      <td style="vertical-align: top; width: 501px;">implemented like Binary Tree.<br>
+      </td>
+      <td style="vertical-align: top; width: 437px;">
+      <ul>
+        <li>insert(), </li>
+        <li>erase(value) , erase(iterator)</li>
+        <li>
+      find(value)<br>
+        </li>
+      </ul>
+</td>
+      <td style="vertical-align: top; width: 210px;"><br>
+      </td>
+    </tr>
+<tr>
+      <td style="vertical-align: top;"><a href="https://www.quantstart.com/articles/Function-Objects-Functors-in-C-Part-1">Functors</a>: Function Objects<br>
+      </td>
+      <td style="vertical-align: top; width: 501px;"><br>
+      </td>
+      <td style="vertical-align: top; width: 437px;"><br>
+      </td>
+      <td style="vertical-align: top; width: 210px;"><br>
+      </td>
+    </tr><tr>
+      <td style="vertical-align: top;">string refence<br>
+      </td>
+      <td style="vertical-align: top; width: 501px;">length(): find length of string<br>
+erase(index, count): erase count chars from index<br>
+stoi(string, 0, base): convert string to int<br>
+reverse(str.begin(), str.end())<br>
+str.substr (3,5);&nbsp;&nbsp;&nbsp;&nbsp; //"We think" =&gt;&nbsp; "think"<br>
+      </td>
+      <td style="vertical-align: top; width: 437px;"><br>
+      </td>
+      <td style="vertical-align: top; width: 210px;"><br>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;"><span style="font-weight: bold;">Algorithms</span><br>
+      <br>
+      </td>
+      <td style="vertical-align: top; width: 501px;"><br>
+      </td>
+      <td style="vertical-align: top; width: 437px;"><br>
+      </td>
+      <td style="vertical-align: top; width: 210px;"><br>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;"><br>
+      </td>
+      <td style="vertical-align: top; width: 501px;">make_heap(), push_heap()<br>
+      </td>
+      <td style="vertical-align: top; width: 437px;"><br>
+      </td>
+      <td style="vertical-align: top; width: 210px;"><a href="https://www.geeksforgeeks.org/stdmake_heap-c-stl/">geeks</a>, <a href="https://stackoverflow.com/questions/7905062/what-does-the-push-heap-function-in-c-do">stackOverFlow</a><br>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;"><br>
+      </td>
+      <td style="vertical-align: top; width: 501px;">sort()<br>
+      </td>
+      <td style="vertical-align: top; width: 437px;">lc128<br>
+      </td>
+      <td style="vertical-align: top; width: 210px;"><br>
+      </td>
+    </tr>
+
+
+
+  </tbody>
+</table>
+
+  <br>
+
+</body></html>
