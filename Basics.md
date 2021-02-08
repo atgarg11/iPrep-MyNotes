@@ -23,3 +23,36 @@
         }
 ```
 [LC-199](https://leetcode.com/problems/binary-tree-right-side-view/)
+
+# Graphs
+## DFS 
+### grids ( undirected Graphs) 
+#### Unique Paths on DFS
+```
+void dfs(vector<vector<int>>& grid, int x, int y) {
+        // Recurssion breaking condition
+        grid[x][y] = 0;
+
+        if ( y+1 < cols && grid[x][y+1]) {
+            pattern += "R";
+            dfs(grid, x,y+1);
+        }
+        pattern += "0"; // This creates a unique Path 
+        if ( y-1 >= 0 && grid[x][y-1]) {
+            pattern += "L";
+            dfs(grid, x,y-1);
+        }
+        pattern += "0"; // This creates a unique Path 
+        if ( x+1 < rows && grid[x+1][y]) {
+            pattern += "D";
+            dfs(grid, x+1,y);
+        }
+        pattern += "0"; // This creates a unique Path 
+        if ( x-1 >=0 && grid[x-1][y]) {
+            pattern += "U";
+            dfs(grid, x-1,y);
+        }
+        pattern += "0";
+    }
+```
+[LC-694](https://leetcode.com/problems/number-of-distinct-islands/)
