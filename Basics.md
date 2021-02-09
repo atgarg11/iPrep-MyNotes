@@ -22,7 +22,27 @@
             res.push_back(node->val);
         }
 ```
-[LC-199](https://leetcode.com/problems/binary-tree-right-side-view/)
+* [LC-199: BT right view](https://leetcode.com/problems/binary-tree-right-side-view/)
+
+## Passing and Returning values from recursive helper function
+```
+    TreeNode* helper(TreeNode* root, TreeNode* p, TreeNode* suc) {
+        if ( p->val == root->val) {
+            if (root->right) {
+                return tmin(root->right);
+            } else {
+                return suc;
+            }
+        } else if ( p->val < root->val) {
+            return helper(root->left, p, root);    
+        } else {
+            return helper(root->right, p, suc);
+        }
+        return NULL;
+    }
+```
+* [285. Inorder Successor](https://leetcode.com/problems/inorder-successor-in-bst/)
+* [98. Validate BST](https://leetcode.com/problems/validate-binary-search-tree/)
 
 # Graphs
 ## DFS 
