@@ -44,6 +44,9 @@
 * [285. Inorder Successor](https://leetcode.com/problems/inorder-successor-in-bst/)
 * [98. Validate BST](https://leetcode.com/problems/validate-binary-search-tree/)
 
+## Some interesting problems
+* [669. Trim a Binary Search Tree](https://leetcode.com/problems/trim-a-binary-search-tree/)
+
 # Graphs
 ## DFS 
 ### grids ( undirected Graphs) 
