@@ -43,6 +43,10 @@
 ```
 * [285. Inorder Successor](https://leetcode.com/problems/inorder-successor-in-bst/)
 * [98. Validate BST](https://leetcode.com/problems/validate-binary-search-tree/)
+* [99. Recover Binary Tree](https://leetcode.com/problems/recover-binary-search-tree/)
+** Find two pairs which don't satisfy the BST property and swap them. 
+    if A...B and .C..D are two such pairs swap A and D. ( This intuition is hard to come by)
+
 
 ## Some interesting problems
 * [669. Trim a Binary Search Tree](https://leetcode.com/problems/trim-a-binary-search-tree/)
