@@ -53,6 +53,34 @@
 
 # Graphs
 ## DFS 
+### Cycle Detetion
+####    Undirected Graphs
+* Union Find
+```
+// UF implementation
+    vector<int> parent;
+    void init(int n) {
+        parent.push_back(0);
+        for ( int i = 1; i <= n; i++) {
+            parent.push_back(i);
+        }
+    }
+    int find(int v) {
+        if ( v != parent[v]) {
+            parent[v] = find(parent[v]);
+        }
+        return parent[v];
+    }
+
+    void lunion(int v1, int v2) {
+         if ( find(v1) != find(v2)) {
+             parent[parent[v2]] = find(v1); // Note parent[parent[]]. This is imp.
+         }
+    }
+```
+** [684. Redundant Connection](https://leetcode.com/problems/redundant-connection/)
+####    Directed Graphs
+* DFS
 ### grids ( undirected Graphs) 
 #### Unique Paths on DFS
 ```
