@@ -43,10 +43,15 @@
 ```
 * [285. Inorder Successor](https://leetcode.com/problems/inorder-successor-in-bst/)
 * [98. Validate BST](https://leetcode.com/problems/validate-binary-search-tree/)
+
+## Interesting Problems on Binary Tree
 * [99. Recover Binary Tree](https://leetcode.com/problems/recover-binary-search-tree/)
 ** Find two pairs which don't satisfy the BST property and swap them. 
     if A...B and .C..D are two such pairs swap A and D. ( This intuition is hard to come by)
-
+* [314. Binary Tree Vertical Order Traversal](https://leetcode.com/problems/binary-tree-vertical-order-traversal/)
+** In Vertical Order Traversal, we need to maintain two points called coordinates of a node ( row, col)
+    Row is determined by the level of node from root. Level order traversal gives you that autmatically
+    Col information needs to be stored in the que while storing the node. 
 
 ## Some interesting problems
 * [669. Trim a Binary Search Tree](https://leetcode.com/problems/trim-a-binary-search-tree/)
