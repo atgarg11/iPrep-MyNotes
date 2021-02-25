@@ -1,3 +1,14 @@
+# Subarray sum problems:
+    Multiple Flavors of these problems and some standard techniques
+### Techniques
+* Sliding Window
+** This technique is useful if there are no negative numbers in the array
+* Prefix Sum
+** Use this if there are negative numbers present
+* Two Pointer
+#### Examples
+[325. Maximum Size Subarray Sum Equals k](https://leetcode.com/problems/maximum-size-subarray-sum-equals-k/)
+
 __Squares of Sorted Array__:
 * Think of it as merge Sort of two sorted arrays. Pick the bigger element from each array.
 ```

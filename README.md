@@ -16,4 +16,5 @@
     
     This problem is easily reduced to a maximum subarray sum problem, which is much more
         easier and manageable to solve. 
-
+### Reduce a multiplcation addition problem to division and subtraction problem. This is useful for minimization problems.
+[991. Broken Calculator](https://leetcode.com/problems/broken-calculator/)
