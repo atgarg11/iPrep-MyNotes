@@ -116,7 +116,12 @@ void dfs(vector<vector<int>>& grid, int x, int y) {
     }
 ```
 [LC-694](https://leetcode.com/problems/number-of-distinct-islands/)
-## Queues and Stacks
+## BFS
+### Interesting Techniques
+* Put more entries in que than just one source.
+#### Examples:
+* [286. Walls and Gates](https://leetcode.com/problems/walls-and-gates/): Put all the gates in the queuefor BFS.
+# Queues and Stacks
 ### Queue
 ```
 class MyCircularQueue {
