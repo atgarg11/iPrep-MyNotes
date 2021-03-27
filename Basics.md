@@ -121,6 +121,13 @@ void dfs(vector<vector<int>>& grid, int x, int y) {
 * Put more entries in que than just one source.
 #### Examples:
 * [286. Walls and Gates](https://leetcode.com/problems/walls-and-gates/): Put all the gates in the queuefor BFS.
+
+## Dijkstra's
+* A variation of BFS with weiths and therefore a min Priority queue
+### interesting Technique.
+* See how instead of single source, distance is calculated from single destination.
+* [1786. Number of Restricted Paths From First to Last Node](https://leetcode.com/problems/number-of-restricted-paths-from-first-to-last-node/)
+* [261. Graph Valid Tree](https://leetcode.com/problems/graph-valid-tree/)
 # Queues and Stacks
 ### Queue
 ```
@@ -193,3 +200,12 @@ public:
     }
 };
 ```
+## Stacks
+Think calmly, what is the recursion, terminating condition and how to convert to explicit stack
+* [536. Construct Binary Tree from String](https://leetcode.com/problems/construct-binary-tree-from-string/)
+    This problem is similar to serialise deserialise problems.
+
+# Hash Maps
+## [Hash Map Design](https://leetcode.com/problems/design-hashmap/)
+## [Hash Set Design]()
+## [Skiped list]()
