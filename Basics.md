@@ -128,6 +128,15 @@ void dfs(vector<vector<int>>& grid, int x, int y) {
 * See how instead of single source, distance is calculated from single destination.
 * [1786. Number of Restricted Paths From First to Last Node](https://leetcode.com/problems/number-of-restricted-paths-from-first-to-last-node/)
 * [261. Graph Valid Tree](https://leetcode.com/problems/graph-valid-tree/)
+
+## Directed Acyclic Graphs
+Useful for ordering questions.
+Different ways to do it
+* BFS with indegree. A node to traverse is put in queue if indegree == 0
+* DFS with cycle detection
+
+### Example
+* [1136. Parallel Courses](https://leetcode.com/problems/parallel-courses/)
 # Queues and Stacks
 ### Queue
 ```
@@ -206,6 +215,6 @@ Think calmly, what is the recursion, terminating condition and how to convert to
     This problem is similar to serialise deserialise problems.
 
 # Hash Maps
-## [Hash Map Design](https://leetcode.com/problems/design-hashmap/)
-## [Hash Set Design]()
-## [Skiped list]()
+* [Hash Map Design](https://leetcode.com/problems/design-hashmap/)
+* [Hash Set Design]()
+* [Skiped list]()

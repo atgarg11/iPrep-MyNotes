@@ -15,10 +15,20 @@
     str = "How is life"
     str.rfind("life") => 7 // result. index of the found string
 ```
+* Creating a string with repititive char
+```
+s = string(2, '?'); // s="??"
+```
 * find()
 ```
 ```
-
+* tokenize()
+```
+string s = "Hello how are you"
+char* c = (char*)(s.cstr());
+token = strtok(s, " ")
+token = strtok(NULL, " ")
+```
 # Palindromes
 Multiple ways to check palindormes
 * Brute force way of checking end chars and moving to centre.
